@@ -1,3 +1,46 @@
 {% extends 'base.html' %}
 {% block title %} About{% endblock title %}
-{% block body %}This is about Page {% endblock body %}
+{% block body %}
+
+ 
+
+<div class="container">
+  <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-write-an-about-us-wip1.png?format=webp&v=1618511825&width=100%" alt="Norway" class="img" style="width: 107%;">
+  <div class="text-block"> 
+    <h3>About Us</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quam velit nobis magni! Accusantium ducimus adipisci illo, expedita possimus saepe distinctio harum natus atque! Voluptas dolorum ullam omnis, quia aspernatur labore libero magnam similique at maxime quos obcaecati et itaque? Quaerat possimus temporibus numquam!
+  </div>
+</div>
+<style>
+  .img{
+    height: 300px;
+    filter: blur(2px);
+
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+.container {
+  position: absolute;
+  padding-top: 1%;
+  
+}
+
+/* Bottom right text */
+.text-block {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+{% endblock body %}
